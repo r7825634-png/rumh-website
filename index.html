@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>هيرش لهب | RUMH AL TEEB</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:#fff;color:#111}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10;padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:900}
+.logo span{color:#c9a227}
+.icons{font-size:20px;display:flex;gap:16px}
+.banner{background:#0a0a0a;color:#fff;text-align:center;padding:10px;font-size:14px;font-weight:700}
+.container{max-width:1100px;margin:auto;padding:16px}
+.title-center{text-align:center;margin:24px 0 10px}
+.title-center h2{font-size:26px;font-weight:900}
+.line{width:60px;height:4px;background:#c9a227;margin:10px auto;border-radius:10px}
+.product{display:flex;gap:24px;flex-wrap:wrap;margin-top:20px}
+.gallery{flex:1;min-width:300px}
+.gallery img{width:100%;border-radius:16px;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.thumbs{display:flex;gap:8px;margin-top:8px}
+.thumbs img{width:70px;height:70px;object-fit:cover;border-radius:10px;border:2px solid #c9a227}
+.info{flex:1;min-width:300px}
+.info h1{font-size:28px;font-weight:900}
+.subtitle{color:#666;font-size:14px;margin:6px 0}
+.stars{color:#ffb400;font-size:18px}
+.price{font-size:26px;font-weight:900;margin:12px 0}
+.price s{color:#999;font-size:16px;margin-right:8px}
+.stock{color:#16a34a;font-weight:700;font-size:14px}
+.desc{background:#fafafa;padding:16px;border-radius:12px;line-height:1.9;font-size:15px;margin:16px 0}
+.desc strong{color:#b91c1c}
+.qty{display:flex;justify-content:space-between;align-items:center;margin:12px 0}
+.qty button{width:36px;height:36px;border:1px solid #ddd;border-radius:50%;background:#fff;font-size:20px}
+.btn{display:block;text-align:center;background:#0a0a0a;color:#fff;padding:16px;border-radius:12px;font-weight:900;font-size:17px;text-decoration:none;margin-top:10px}
+.btn-green{background:#22c55e}
+.section{margin:40px 0}
+.faq{border:1px solid #eee;border-radius:12px;padding:14px;margin-bottom:10px}
+.faq b{display:block;margin-bottom:6px}
+.reviews{background:#fafafa;padding:16px;border-radius:12px}
+.review{border-bottom:1px solid #eee;padding:10px 0}
+.review:last-child{border:none}
+footer{background:#0a0a0a;color:#fff;text-align:center;padding:30px 16px;margin-top:40px}
+footer a{color:#c9a227;text-decoration:none}
+@media(max-width:700px){.product{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<div class="banner">متوفر الآن - شحن لجميع الدول</div>
+
+<header>
+  <div class="logo">رمح <span>الطيب</span></div>
+  <div class="icons">🔍 👤 🛒</div>
+</header>
+
+<div class="container">
+
+  <div class="title-center">
+    <h2>مَلِك الإطراءات و المطلوب عالمياً</h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="product">
+    <div class="gallery">
+      <!-- هنا صورة عطرك انت - بدلها لما يجهز عطرك الحقيقي -->
+      <img src="perfume.jpg" alt="عطر هيرش لهب">
+      <div class="thumbs">
+        <img src="perfume.jpg">
+        <img src="perfume.jpg">
+        <img src="perfume.jpg">
+      </div>
+    </div>
+
+    <div class="info">
+      <h1>هيرش لهب - RUMH AL TEEB</h1>
+      <div class="subtitle">Eau De Parfum – عود و عنبر – 100ml</div>
+      <div class="stars">★★★★★ <span style="color:#111;font-size:14px">(206 تقييم)</span></div>
+
+      <div class="price"><s>299 ر.س</s> 199 ر.س</div>
+      <div class="stock">✓ متوفر في المخزون</div>
+      <small style="color:#666">شامل ضريبة القيمة المضافة</small>
+
+      <div class="desc">
+        <strong>شحن عالمي بأسعار منافسة.</strong><br><br>
+        <strong>عطر هيرش لهب — شرارة لا تنطفئ!</strong><br>
+        عطر بارد منعش يدوم طويلاً، حضوره قوي ويترك بصمة حتى في أحر الأجواء.<br><br>
+        <strong>رائحة آسرة ومبهرة.</strong><br>
+        هنا يلتقي العود الكمبودي الفاخر مع العنبر الدافئ ونفحات من الزعفران، في توليفة شرقية لا تُنسى.<br><br>
+        <strong>نوع العطر:</strong> للجنسين<br>
+        <strong>المقدمة:</strong> زعفران، هيل<br>
+        <strong>القلب:</strong> عود، ورد طائفي<br>
+        <strong>القاعدة:</strong> عنبر، مسك، باتشولي
+      </div>
+
+      <div class="qty">
+        <b>الكمية</b>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button onclick="changeQty(-1)">-</button>
+          <span id="qty">1</span>
+          <button onclick="changeQty(1)">+</button>
+        </div>
+      </div>
+
+      <a class="btn" href="https://wa.me/967782562438?text=أبغى أطلب عطر هيرش لهب - 199 ر.س">🛒 أضف للسلة - اطلب عبر واتساب</a>
+      <a class="btn btn-green" href="https://wa.me/967782562438">💬 استفسر واتساب</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="title-center"><h2>من سلسلة الإطراءات العالمية - هيرش لهب</h2><div class="line"></div><p style="color:#666">الأسئلة الشائعة</p></div>
+    <div class="faq"><b>لماذا وضعنا ضمان الجرأة؟ إذا لم يجلب لك الإطراء والمديح الاسترجاع مجاني؟</b><span>لأننا كسرنا القاعدة. عطر هيرش لهب صُنع بجودة وتركيز عالٍ جداً وبمواد خام مختارة بعناية، ولأن الإعجاب أصبح مضمون بالنسبة لنا وضعنا رهاننا على الإطراء والمديح.</span></div>
+    <div class="faq"><b>كم يدوم ثبات العطر؟</b><span>ثبات يتجاوز 12 ساعة، وفوحان قوي أول ساعتين، وتبقى رائحته في الملابس لأيام.</span></div>
+    <div class="faq"><b>هل يوجد شحن دولي؟</b><span>نعم، نشحن للسعودية واليمن وجميع دول الخليج والعالم بأسعار منافسة.</span></div>
+  </div>
+
+  <div class="section">
+    <div class="title-center"><h2>تقييمات العملاء</h2><div class="line"></div></div>
+    <div class="reviews">
+      <div class="review"><b>منال ع. ★★★★★</b><p>ممتاز، ريحته بقت في المكان 3 أيام</p></div>
+      <div class="review"><b>سعيد القحطاني ★★★★★</b><p>عطر فخم مره مره، الفوحان تبارك الرحمن</p></div>
+      <div class="review"><b>عادل عسيري ★★★★★</b><p>اقسم بالله عطر فخم، شكراً للعطور العز</p></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <h3>Hersh Al-Azz</h3>
+  <p style="margin:10px 0">من السعودية إلى العالم</p>
+  <p><a href="https://wa.me/967782562438">واتساب: 967782562438</a></p>
+  <p style="margin-top:14px;font-size:13px;color:#888">All rights reserved | 2026 rumhalteeb.com</p>
+</footer>
+
+<script>
+let q=1;
+function changeQty(n){ q=Math.max(1,q+n); document.getElementById('qty').innerText=q; }
+</script>
+</body>
+</html>
